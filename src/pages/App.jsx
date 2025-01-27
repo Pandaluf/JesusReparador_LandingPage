@@ -6,18 +6,15 @@ import Footer from "../components/footer/Footer.jsx";
 function App() {
 
   return (
-      <>
-        <NavBar />
-        <CarouselFade />
-        <h1>Hola</h1>
-          <h1>Hola</h1>
-          <h1>Hola</h1>
-          <h1>Hola</h1>
-          <h1>Hola</h1>
-          <h1>Hola</h1>
-          <h1>Hola</h1>
-        <Footer />
-      </>
+    <>
+    <NavBar />
+    <CarouselFade />
+    <div className="welcome">
+      <h1>¡Bienvenido al colegio "Jesús Reparador"!</h1>
+      <h1>Donde los sueños de tus hijos se convierten en nuestra misión</h1>
+    </div>
+    <Footer />
+    </>
   )
 }
 

@@ -27,26 +27,38 @@ div p {
     font-size: 25px;
     margin-bottom: 10px;
     margin-top: 20px;
+    font-family: "Red Hat Display", cursive;
+    /*font-weight: bold;*/
 }
 
 .footer__paragraph {
     color: white;
     font-size: 20px;
     margin-bottom: 15px;
+    font-family: "Red Hat Display", cursive;
 }
 
 .footer__paragraph a {
     color: white;
     text-decoration: none; /* Quita el subrayado */
     font-weight: bold;
+    font-family: "Arial", serif;
 }
 
 .footer__image-marginBottom {
     margin-bottom: 10px;
+    transition: filter 0.3s ease;
+}
+.footer__image-marginBottom:hover {
+    filter: brightness(0.7);
 }
 
 .footer__image-marginTop {
     margin-top: 10px;
+    transition: filter 0.3s ease;
+}
+.footer__image-marginTop:hover {
+    filter: brightness(0.7);
 }
 
 /* Responsividad */
