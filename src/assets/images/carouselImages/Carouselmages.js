@@ -6,6 +6,7 @@ import enroll2025JR1 from './Enroll2025_JR_1.jpg';
 import enroll2025JR2 from './Enroll2025_JR_2.jpg';
 import enroll2025JR3 from './Enroll2025_JR_3.jpg';
 import enroll2025JR4 from './Enroll2025_JR_4.jpg';
+import enroll2025JR5 from './Enroll2025_JR_5.jpg';
 import oratoryJR0 from './Oratory_JR_0.jpg';
 
 export default {
@@ -18,4 +19,5 @@ export default {
     "imgEnroll2025JR2": enroll2025JR2,
     "imgEnroll2025JR3": enroll2025JR3,
     "imgEnroll2025JR4": enroll2025JR4,
+    "imgEnroll2025JR5": enroll2025JR5,
 }

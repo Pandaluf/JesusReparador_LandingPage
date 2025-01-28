@@ -8,7 +8,7 @@ export default function CarouselFade() {
                 <Carousel.Item>
                     <img
                         className="d-block w-100 img-fluid"
-                        src={CarouselImages.imgEnroll2025JR0}
+                        src={CarouselImages.imgEnroll2025JR5}
                         alt="Image One"
                     />
                 </Carousel.Item>
