@@ -6,11 +6,14 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap; /* Permite que los elementos se ajusten a varias líneas si no hay espacio */
-    gap: 10px; /* Añade espacio entre los elementos */
 }
 
 div p {
     margin: 0;
+}
+
+.footer__logo {
+    height: auto; /* Asegura que la proporción del logo se mantenga */
 }
 
 .footer__content {
@@ -75,6 +78,10 @@ div p {
     .footer__paragraph {
         font-size: 18px;
     }
+
+    .footer__logo {
+        width: 65vh; /* Reduce el tamaño del logo en pantallas medianas */
+    }
 }
 
 @media (max-width: 576px) {
@@ -89,5 +96,9 @@ div p {
     footer {
         gap: 15px;
         padding: 15px; /* Reduce el padding en pantallas pequeñas */
+    }
+
+    .footer__logo {
+        width: 40vh; /* Reduce aún más el tamaño del logo en pantallas pequeñas */
     }
 }

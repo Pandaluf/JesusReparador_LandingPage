@@ -6,7 +6,7 @@ import Logo from '../../assets/images/Logo_JR.png';
 function Footer() {
     return (
         <footer>
-            <img src={Logo} alt="Facebook logo" />
+            <img src={Logo} alt="Jesus Reparador logo" className="footer__logo"/>
             <div className="footer__content">
                 <p className="footer__title">Solicita información</p>
                 <p className="footer__paragraph">WhatsApp: <a href="https://bit.ly/3jGAtPn">961 814 053</a></p>
