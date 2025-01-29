@@ -9,7 +9,7 @@
 
 .toggle .navbar-toggler-icon {
     background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="none"><path stroke="white" stroke-width="3" d="M4 7h22M4 15h22M4 23h22"/></svg>');
-    width: 40px; /* Ajusta el tamaño general del ícono si es necesario */
+    width: 40px;
     height: 40px;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .custom-navbar__link:hover {
-    color: #FFD700; /* Cambia el color de la letra a dorado al hacer click */
+    color: #FFD700;
     text-shadow: 2px 2px 5px rgba(255, 215, 0, 0.8); /* Sombra dorada */
 }
 
