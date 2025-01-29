@@ -1,0 +1,16 @@
+.card {
+    width: 19rem;
+    display: flex;
+    align-items: center;
+    border:0;
+}
+.card__img{
+    width: 60% !important;
+    margin-top: 1rem;
+}
+.card__title-center{
+    text-align: center;
+}
+.card__text-justify{
+    text-align: justify;
+}

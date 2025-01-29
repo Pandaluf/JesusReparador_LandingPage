@@ -1,16 +1,51 @@
 import CarouselFade from "../../components/carouselfade/CarouselFade.jsx";
+import CardBasic from "../../components/card/Card.jsx";
+import imgHome from "./HomeImages.js";
+import "./Home.css";
 
 function Home() {
-
     return (
         <>
             <CarouselFade />
-            <div className="welcome">
+            <section className="welcome text-center">
                 <h1>¡Bienvenido al colegio Jesús Reparador!</h1>
-                <h1>Donde los sueños de tus hijos se convierten en nuestra misión</h1>
-            </div>
+                <h2>Donde los sueños de tus hijos se convierten en nuestra misión</h2>
+            </section>
+
+            {/* Contenedor principal con margen y espaciado adecuado */}
+            <section className="container d-flex flex-column align-items-center">
+
+                {/* Primera fila: 4 tarjetas distribuidas equitativamente */}
+                <div className="d-flex justify-content-around flex-wrap gap-2 mb-4 w-100">
+                    <CardBasic title="Formación de Valores"
+                               text="Fomentamos la responsabilidad, el respeto y la solidaridad, formando no solo estudiantes brillantes, sino también ciudadanos íntegros."
+                               img={imgHome.imgIntegrity} />
+                    <CardBasic title="Infraestructura Moderna"
+                               text="Pizarra interactiva, laboratorio, sala de computo y espacios recreativos diseñados para el desarrollo integral de nuestros alumnos."
+                               img={imgHome.imgPlayground} />
+                    <CardBasic title="Participaciones en Concursos"
+                               text="Nuestros estudiantes participan en competencias científicas, olimpiadas de matemáticas y concursos de arte locales y nacionales."
+                               img={imgHome.imgTrophy} />
+                    <CardBasic title="Actividades Extracurriculares"
+                               text="Ofrecemos una variedad de actividades como deportes, música, arte, danza y más!, promoviendo el talento y trabajo en equipo."
+                               img={imgHome.imgDance} />
+                </div>
+
+                {/* Segunda fila: 3 tarjetas centradas */}
+                <div className="d-flex justify-content-around flex-wrap gap-2 w-75">
+                    <CardBasic title="Excelencia Académica"
+                               text="Brindamos educación de calidad con un currículo actualizado, enfocado en el desarrollo intelectual y rendimiento académico de cada alumno."
+                               img={imgHome.imgDiploma} />
+                    <CardBasic title="Material Educativo"
+                               text="Ofrecemos una amplia variedad de materiales educativos físicos que fomentan un aprendizaje efectivo y motivador."
+                               img={imgHome.imgDiploma} />
+                    <CardBasic title="Seguridad y Bienestar"
+                               text="Priorizamos la seguridad con personal capacitado, cámaras de seguridad y protocolos de emergencia para proteger a nuestros estudiantes."
+                               img={imgHome.imgDiploma} />
+                </div>
+            </section>
         </>
-    )
+    );
 }
 
-export default Home
+export default Home;
