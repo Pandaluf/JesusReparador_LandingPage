@@ -14,6 +14,7 @@ div p {
 
 .footer__logo {
     height: auto; /* Asegura que la proporción del logo se mantenga */
+    width: auto;
 }
 
 .footer__content {

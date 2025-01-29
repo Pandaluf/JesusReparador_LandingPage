@@ -8,8 +8,8 @@ function Home() {
         <>
             <CarouselFade/>
             <section className="welcome text-center">
-                <h1>¡Bienvenido al colegio Jesús Reparador!</h1>
-                <h2>Donde los sueños de tus hijos se convierten en nuestra misión</h2>
+                <h1 className="fs-1 fs-md-2 fs-sm-3">¡Bienvenido al colegio Jesús Reparador!</h1>
+                <h2 className="fs-3 fs-md-4 fs-sm-5">Donde los sueños de tus hijos se convierten en nuestra misión</h2>
             </section>
 
             {/* Contenedor principal con margen y espaciado adecuado */}
@@ -47,7 +47,7 @@ function Home() {
 
 
             <section className="mt-4 mb-1">
-                <h1 className="text-center">Celebraciones y Eventos Especiales</h1>
+                <h1 className="text-center">¡Forma parte de nuestra comunidad educativa!</h1>
                 <div className="event__mosaic text">
                     <div
                         className="event__mosaic__card card-tall card-wide"
@@ -91,7 +91,7 @@ function Home() {
                         className="event__mosaic__card card-wide"
                     ><img className="card-custom-image" src={imgHome.imgParaliturgy1}/></div>
                     <div
-                        className="event__mosaic__card"
+                        className="event__mosaic__card hide-on-small"
                     ><img className="card-custom-image" src={imgHome.imgSwearingIn1}/></div>
                 </div>
             </section>

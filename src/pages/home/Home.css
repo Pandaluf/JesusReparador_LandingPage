@@ -39,3 +39,9 @@
         grid-column: span 2 / auto;
     }
 }
+
+@media (min-width: 984px) and (max-width: 1230px) {
+    .hide-on-small {
+        display: none;
+    }
+}
