@@ -1,0 +1,19 @@
+.who{
+    margin-top: 15px;
+    text-align: center;
+}
+.who__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.who__content__text{
+    margin-right: 50px;
+    text-align: justify;
+    font-size: 20px;
+}
+.who__content__img{
+    width: 250px;
+}
