@@ -47,7 +47,7 @@ function Home() {
 
 
             <section className="mt-4 mb-1">
-                <h1 className="text-center event__title">¡Forma parte de nuestra comunidad educativa!</h1>
+                <h1 className="text-center welcome__title">¡Forma parte de nuestra comunidad educativa!</h1>
                 <div className="event__mosaic text">
                     <div
                         className="event__mosaic__card card-tall card-wide"

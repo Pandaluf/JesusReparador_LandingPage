@@ -1,6 +1,6 @@
 .contact {
     width: 100%;
-    height: 30vh;
+    height: 300px; /* Antes 30vh */
     background-image: url("../../assets/images/Background_2.webp");
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,8 +9,8 @@
     justify-content: center;
     align-items: center;
     font-family: "Rubik", sans-serif;
-    font-weight: 2;
-    image-rendering: crisp-edges; /* Mejor para imágenes con detalles definidos */
+    font-weight: 400;
+    image-rendering: crisp-edges;
 }
 
 .contact::before {
@@ -23,12 +23,11 @@
     background-image: url("../../assets/images/Background_Sections.png");
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(8px); /* Aplica desenfoque a la imagen */
-    opacity: 0.7; /* Ajusta la opacidad si quieres que se vea más oscuro */
+    filter: blur(8px);
+    opacity: 0.7;
     z-index: 1;
 }
 
-/* Asegura que el contenido dentro de .contact esté encima */
 .contact * {
     position: relative;
     z-index: 2;
@@ -41,7 +40,7 @@
     color: white;
     font-family: "fantasy", cursive;
     font-weight: bold;
-    font-size: 200px;
+    font-size: 100px; /* Antes 200px */
     background-color: red;
     border: 5px solid white;
     padding: 20px;
@@ -54,7 +53,7 @@
     background-image: url("../../assets/images/Playground_1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 0; /* Asegurar que la capa de desenfoque esté detrás */
+    z-index: 0;
 }
 
 .information::before {
@@ -65,14 +64,15 @@
     width: 100%;
     height: 100%;
     background: url("../../assets/images/Playground_1.jpg") no-repeat;
-    filter: blur(9px) brightness(50%); /* Aumenta el desenfoque según lo necesites */
+    filter: blur(9px) brightness(50%);
     z-index: -1;
 }
 
 .information__content {
     display: flex;
 }
-.information__content__img{
+
+.information__content__img {
     width: 30%;
 }
 
@@ -84,46 +84,64 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    font-size: 3vh;
+    font-size: 22px;
     font-family: "roboto mono", monospace;
     font-weight: bold;
     background-color: #e7fbfa;
-    box-shadow: 0 0 20px 10px rgba(0, 132, 255, 0.9);/* Brillo blanco */
+    box-shadow: 0 0 20px 10px rgba(0, 132, 255, 0.9);
     transition: box-shadow 0.3s ease-in-out;
 }
 
 .information__content__contact:hover {
-    box-shadow: 0 0 25px 15px rgba(0, 132, 255, 1); /* Aumenta el brillo al pasar el mouse */
+    box-shadow: 0 0 25px 15px rgba(0, 132, 255, 1);
 }
 
-.information__content__contact__part-size{
-    font-size: 4vh;
+.information__content__contact__part-size {
+    font-size: 35px;
     color: red;
 }
 
-.information__content__contact__part{
-    margin: 0.8vh;
+.information__content__contact__part {
+    margin: 10px;
 }
 
-.information__content__contact__title{
+.information__content__contact__part img{
+    transition: filter 0.3s ease-in-out;
+}
+.information__content__contact__part img:hover {
+    filter: brightness(0.7);
+}
+
+.information__content__contact__title {
     color: #000000;
 }
 
-.map{
+.map {
     border-top: 4px solid black;
-    height: 30rem;
+    height: 480px;
 }
 
-.map__title{
+.map__title {
     background-color: #f1ec32;
     border-top: 4px solid black;
-    color:black;
+    color: black;
     font-weight: bold;
-    font-size: 3vh;
-    font-family: "Amasis MT Pro Black", cursive;
+    font-size: 24px;
+    font-family: "Amasis MT Pro Black", inherit, serif;
 }
 
+.information__content__contact img {
+    width: 100px;
+    max-width: 150px;
+    height: auto;
+}
+
+/* Responsividad */
 @media (max-width: 1200px) {
+    .information__content__contact img {
+        width: 90px;
+    }
+
     .information__content {
         flex-direction: column;
         justify-content: center;
@@ -131,65 +149,73 @@
     }
 
     .information__content__img {
-        width: 50%; /* Ajustar imagen en pantallas medianas */
+        width: 50%;
     }
 
     .information__content__contact {
         width: 90%;
-        font-size: 2.5vh;
+        font-size: 20px;
     }
 
     .map__title {
-        font-size: 2.5vh;
+        font-size: 20px;
     }
 }
 
 @media (max-width: 768px) {
+    .information__content__contact img {
+        width: 80px;
+    }
+
     .information__content__img {
-        width: 70%; /* Ajustar imagen en pantallas pequeñas */
+        width: 70%;
     }
 
     .information__content__contact {
         width: 95%;
-        font-size: 2.2vh;
+        font-size: 18px;
     }
 
-    .information__content__contact__part-size{
-        font-size: 3vh;
+    .information__content__contact__part-size {
+        font-size: 24px;
     }
 
     .map {
-        height: 20rem; /* Reducir el tamaño del mapa */
+        height: 320px;
     }
 
     .map__title {
-        font-size: 2vh;
+        font-size: 18px;
     }
 
     .contact__title {
-        font-size: 100px; /* Ajustar título en pantallas más pequeñas */
+        font-size: 80px;
     }
 }
 
 @media (max-width: 480px) {
+    .information__content__contact img {
+        width: 70px;
+    }
+
     .information__content__img {
-        width: 80%; /* Ajustar imagen en pantallas extra pequeñas */
+        width: 80%;
     }
 
     .information__content__contact {
         width: 100%;
-        font-size: 2vh;
+        font-size: 16px;
     }
 
     .map {
-        height: 15rem; /* Reducir aún más el tamaño del mapa */
+        height: 240px;
     }
 
     .map__title {
-        font-size: 1.8vh;
+        font-size: 16px;
     }
 
     .contact__title {
-        font-size: 80px; /* Ajustar título en pantallas muy pequeñas */
+        font-size: 60px;
     }
 }

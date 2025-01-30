@@ -20,7 +20,10 @@ function Contact() {
                         <div className="information__content__contact__part">
                             <p>¡Dejanos un mensaje y reserva tu visita!</p>
                             <p>WhatsApp: 961 814 053</p>
-                            <img src={WhatsAppLogo2} alt="Whatsapp" width={100} className="mt-4"/>
+                            <a href="https://bit.ly/3jGAtPn"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                            ><img src={WhatsAppLogo2} alt="Whatsapp" width={100} className="mt-4"/></a>
                         </div>
                     </div>
                 </div>
