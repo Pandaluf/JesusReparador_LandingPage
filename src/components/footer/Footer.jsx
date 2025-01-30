@@ -1,6 +1,6 @@
 import './Footer.css'
 import facebookLogo from '../../assets/images/facebook_Logo.png'
-import whatsappLogo from '../../assets/images/whatsapp_Logo.png'
+import whatsappLogo from '../../assets/images/Whatsapp_Logo_1.png'
 import Logo from '../../assets/images/Logo_JR.png';
 
 function Footer() {

@@ -47,3 +47,144 @@
     padding: 20px;
     border-radius: 22px;
 }
+
+.information {
+    position: relative;
+    padding: 50px;
+    background-image: url("../../assets/images/Playground_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0; /* Asegurar que la capa de desenfoque esté detrás */
+}
+
+.information::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../../assets/images/Playground_1.jpg") no-repeat;
+    filter: blur(9px) brightness(50%); /* Aumenta el desenfoque según lo necesites */
+    z-index: -1;
+}
+
+.information__content {
+    display: flex;
+}
+.information__content__img{
+    width: 30%;
+}
+
+.information__content__contact {
+    border: 3px solid black;
+    border-radius: 10%;
+    color: black;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 3vh;
+    font-family: "roboto mono", monospace;
+    font-weight: bold;
+    background-color: #e7fbfa;
+    box-shadow: 0 0 20px 10px rgba(0, 132, 255, 0.9);/* Brillo blanco */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.information__content__contact:hover {
+    box-shadow: 0 0 25px 15px rgba(0, 132, 255, 1); /* Aumenta el brillo al pasar el mouse */
+}
+
+.information__content__contact-size{
+    font-size: 2.5vh;
+}
+
+.information__content__contact__part{
+    margin: 0.8vh;
+}
+
+.information__content__contact__title{
+    color: #000000;
+}
+
+.map{
+    border-top: 4px solid black;
+    height: 30rem;
+}
+
+.map__title{
+    background-color: #f1ec32;
+    border-top: 4px solid black;
+    color:black;
+    font-weight: bold;
+    font-size: 3vh;
+    font-family: "Amasis MT Pro Black", cursive;
+}
+
+@media (max-width: 1200px) {
+    .information__content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .information__content__img {
+        width: 50%; /* Ajustar imagen en pantallas medianas */
+    }
+
+    .information__content__contact {
+        width: 90%;
+        font-size: 2.5vh;
+    }
+
+    .map__title {
+        font-size: 2.5vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .information__content__img {
+        width: 70%; /* Ajustar imagen en pantallas pequeñas */
+    }
+
+    .information__content__contact {
+        width: 95%;
+        font-size: 2.2vh;
+    }
+
+    .map {
+        height: 20rem; /* Reducir el tamaño del mapa */
+    }
+
+    .map__title {
+        font-size: 2vh;
+    }
+
+    .contact__title {
+        font-size: 100px; /* Ajustar título en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .information__content__img {
+        width: 80%; /* Ajustar imagen en pantallas extra pequeñas */
+    }
+
+    .information__content__contact {
+        width: 100%;
+        font-size: 2vh;
+    }
+
+    .map {
+        height: 15rem; /* Reducir aún más el tamaño del mapa */
+    }
+
+    .map__title {
+        font-size: 1.8vh;
+    }
+
+    .contact__title {
+        font-size: 80px; /* Ajustar título en pantallas muy pequeñas */
+    }
+}
