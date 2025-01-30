@@ -1,84 +1,97 @@
 .who {
     margin-top: 15px;
     text-align: center;
-    padding: 0 15px; /* Agregado para mejorar el espaciado en pantallas pequeñas */
+    padding: 0 10px;
 }
 
 .who__content {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
-    padding-right: 30px;
-    padding-left: 30px;
+    padding: 0 15px;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .who__content__text {
-    margin-right: 50px;
+    margin-right: 0;
     text-align: justify;
     font-size: 22px;
-    max-width: 600px; /* Limita el tamaño del texto en pantallas grandes */
+    margin-bottom: 20px;
+    max-width: 100%;
 }
 
 .who__content__img {
-    width: 250px;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 20px;
 }
 
-.d-flex {
-    display: flex;
-}
-
-.justify-content-evenly {
-    justify-content: space-evenly;
-}
-
-.mt-5 {
-    margin-top: 3rem;
-}
-
-.mb-2 {
-    margin-bottom: 1rem;
-}
-
-/* Responsividad para pantallas pequeñas */
-@media (max-width: 768px) {
+@media (min-width: 1024px) {
     .who__content {
-        flex-direction: column; /* Los elementos se apilan verticalmente en pantallas pequeñas */
-        text-align: center;
-    }
-
-    .who__content__text {
-        margin-right: 0;
-        font-size: 18px; /* Ajusta el tamaño de fuente en pantallas pequeñas */
+        width: 80%;
+        margin: 0 auto;
     }
 
     .who__content__img {
-        width: 200px; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
-        margin-top: 20px; /* Espaciado entre el texto y la imagen */
-    }
-
-    .d-flex {
-        flex-direction: column; /* Los elementos se apilan verticalmente */
-        align-items: center;
-    }
-
-    .d-flex img {
-        width: 80%; /* Hace que las imágenes sean más pequeñas en pantallas pequeñas */
-        margin-bottom: 15px; /* Espaciado entre las imágenes */
+        max-width: 250px;
     }
 }
 
-/* Responsividad para pantallas extra pequeñas (móviles muy pequeños) */
-@media (max-width: 480px) {
-    .who__content__text {
-        font-size: 16px; /* Ajusta el tamaño de la fuente aún más */
+.who__mission {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.who__mission img {
+    width: 100%;
+    max-width: 450px;
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .who__mission {
+        justify-content: center;
+    }
+
+    .who__mission img {
+        width: 90%;
+        max-width: 400px;
     }
 
     .who__content__img {
-        width: 180px; /* Ajusta el tamaño de la imagen aún más */
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 768px) {
+    .who__content {
+        flex-direction: row;
+        justify-content: flex-start;
     }
 
-    .who {
-        padding: 0 10px; /* Ajusta el padding en pantallas más pequeñas */
+    .who__content__text {
+        font-size: 25px;
+        margin-right: 50px;
+    }
+
+    .who__content__img {
+        width: 350px;
+        margin-top: 0;
+    }
+
+    .who__mission {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .who__mission img {
+        width: 30%;
+        max-width: 450px;
     }
 }

@@ -1,5 +1,6 @@
 import "./Section.css"
 
+// eslint-disable-next-line react/prop-types
 function Section({text}){
     return (
         <>

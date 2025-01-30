@@ -21,7 +21,7 @@ function About() {
                     </div>
                     <img src={BadjeJR} alt="BadjeJR" className="who__content__img"/>
                 </div>
-                <div className="d-flex justify-content-evenly mt-5 mb-2">
+                <div className="who__mission">
                     <img src={MissionJR} alt="MissionJR" />
                     <img src={VissionJR} alt="MissionJR"/>
                 </div>
