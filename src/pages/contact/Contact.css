@@ -96,8 +96,9 @@
     box-shadow: 0 0 25px 15px rgba(0, 132, 255, 1); /* Aumenta el brillo al pasar el mouse */
 }
 
-.information__content__contact-size{
-    font-size: 2.5vh;
+.information__content__contact__part-size{
+    font-size: 4vh;
+    color: red;
 }
 
 .information__content__contact__part{
@@ -151,6 +152,10 @@
     .information__content__contact {
         width: 95%;
         font-size: 2.2vh;
+    }
+
+    .information__content__contact__part-size{
+        font-size: 3vh;
     }
 
     .map {

@@ -12,7 +12,7 @@ function Contact() {
                     <img src={CapybaraJR2} alt="Capybara" className="information__content__img"/>
                     <div className="information__content__contact text-center gap-4">
                         <div className="information__content__contact__part">
-                            <p>Horario de atención</p>
+                            <p className="information__content__contact__part-size">Horario de atención</p>
                             <p>Lunes a Viernes | 9:00 AM - 4:00 PM (Presencial)</p>
                             <p>Lunes a Sabados | 9:00 AM - 7:00 PM (WhatsApp)</p>
                         </div>
