@@ -38,10 +38,10 @@ function Home() {
                                img={imgHome.imgDiploma}/>
                     <CardBasic title="Material Educativo"
                                text="Ofrecemos una amplia variedad de materiales educativos físicos que fomentan un aprendizaje efectivo y motivador."
-                               img={imgHome.imgDiploma}/>
+                               img={imgHome.imgMaterialIcon}/>
                     <CardBasic title="Seguridad y Bienestar"
                                text="Priorizamos la seguridad con personal capacitado, cámaras de seguridad y protocolos de emergencia para proteger a nuestros estudiantes."
-                               img={imgHome.imgDiploma}/>
+                               img={imgHome.imgSecurityIcon}/>
                 </div>
             </section>
 

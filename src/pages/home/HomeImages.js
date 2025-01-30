@@ -3,6 +3,8 @@ import Playground from "../../assets/images/Playground.png"
 import Trophy from "../../assets/images/Trophy.png"
 import Dance from "../../assets/images/Dance.png"
 import Diploma from "../../assets/images/Diploma.png"
+import MaterialIcon from "../../assets/images/Material_Icon.png"
+import SecurityIcon from "../../assets/images/Security_Icon_4.png"
 import AchievementDay1 from "../../assets/images/news/Achievement_Day_1.jpg"
 import AchievementDay2 from "../../assets/images/news/Achievement_Day_2.jpg"
 import AchievementDay3 from "../../assets/images/news/Achievement_Day_3.jpg"
@@ -57,4 +59,6 @@ export default {
     "imgWelcome2": Welcome2,
     "imgWorldAutismDay1": WorldAutismDay1,
     "imgSwearingIn1": SwearingIn1,
+    "imgMaterialIcon": MaterialIcon,
+    "imgSecurityIcon": SecurityIcon,
 }
