@@ -1,19 +1,84 @@
-.who{
+.who {
     margin-top: 15px;
     text-align: center;
+    padding: 0 15px; /* Agregado para mejorar el espaciado en pantallas pequeñas */
 }
-.who__content{
+
+.who__content {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
     padding-right: 30px;
     padding-left: 30px;
 }
-.who__content__text{
+
+.who__content__text {
     margin-right: 50px;
     text-align: justify;
-    font-size: 20px;
+    font-size: 22px;
+    max-width: 600px; /* Limita el tamaño del texto en pantallas grandes */
 }
-.who__content__img{
+
+.who__content__img {
     width: 250px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-evenly {
+    justify-content: space-evenly;
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+.mb-2 {
+    margin-bottom: 1rem;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .who__content {
+        flex-direction: column; /* Los elementos se apilan verticalmente en pantallas pequeñas */
+        text-align: center;
+    }
+
+    .who__content__text {
+        margin-right: 0;
+        font-size: 18px; /* Ajusta el tamaño de fuente en pantallas pequeñas */
+    }
+
+    .who__content__img {
+        width: 200px; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+        margin-top: 20px; /* Espaciado entre el texto y la imagen */
+    }
+
+    .d-flex {
+        flex-direction: column; /* Los elementos se apilan verticalmente */
+        align-items: center;
+    }
+
+    .d-flex img {
+        width: 80%; /* Hace que las imágenes sean más pequeñas en pantallas pequeñas */
+        margin-bottom: 15px; /* Espaciado entre las imágenes */
+    }
+}
+
+/* Responsividad para pantallas extra pequeñas (móviles muy pequeños) */
+@media (max-width: 480px) {
+    .who__content__text {
+        font-size: 16px; /* Ajusta el tamaño de la fuente aún más */
+    }
+
+    .who__content__img {
+        width: 180px; /* Ajusta el tamaño de la imagen aún más */
+    }
+
+    .who {
+        padding: 0 10px; /* Ajusta el padding en pantallas más pequeñas */
+    }
 }
