@@ -85,3 +85,22 @@ body{
 Link{
     text-decoration: none
 }
+
+@media (max-width: 1700px) {
+    .custom-navbar {
+        padding: 8px 0;
+    }
+    .logo {
+        height: 45px;
+    }
+    .test {
+        height: 4.5rem;
+    }
+    .custom-navbar__link {
+        font-size: 20px;
+    }
+    .custom-navbar__link__contact {
+        font-size: 20px;
+        padding: 10px;
+    }
+}

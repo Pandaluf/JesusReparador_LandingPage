@@ -38,7 +38,7 @@ function NavBar() {
                         </Offcanvas.Header>
                         <Offcanvas.Body className="p-3">
                             <Nav className="justify-content-center flex-grow-1 pe-3">
-                                <img src={logo} alt="logo" height={90} className="me-0 me-lg-5" />
+                                <img src={logo} alt="logo" height={90} className="me-0 me-lg-5 test" />
 
                                 {/* Enlaces que cierran el Offcanvas al hacer clic */}
                                 <Link to="/" className="no-decoration" onClick={handleClose}>
