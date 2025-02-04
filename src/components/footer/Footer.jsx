@@ -1,9 +1,13 @@
 import './Footer.css'
 import facebookLogo from '../../assets/images/facebook_Logo.png'
 import whatsappLogo from '../../assets/images/Whatsapp_Logo_1.png'
+import complaintBook from '../../assets/images/Complaints_Book.png'
 import Logo from '../../assets/images/Logo_JR.png';
+import {useNavigate} from "react-router-dom";
 
 function Footer() {
+    const navigate = useNavigate();
+
     return (
         <footer>
             <img src={Logo} alt="Jesus Reparador logo" className="footer__logo"/>
@@ -21,6 +25,22 @@ function Footer() {
                    target="_blank"
                    rel="noopener noreferrer"
                 ><img className="footer__image-marginTop" src={facebookLogo} alt="Facebook Logo" height={90}/></a>
+            </div>
+            <div>
+                <a
+                    href="/complaint"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        navigate("/complaint");
+                    }}
+                >
+                    <img
+                        src={complaintBook}
+                        alt="Complaints Book"
+                        height={80}
+                        className="mt-3"
+                    />
+                </a>
             </div>
         </footer>
     );
