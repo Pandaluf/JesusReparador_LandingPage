@@ -7,8 +7,10 @@ import * as formik from 'formik';
 import * as yup from 'yup';
 import OpenBook from '../../assets/images/Open_Book.png';
 import './Complaint.css';
+import {postComplaint} from "../../api/Complaint.api.js";
 
 function Complaint() {
+
     const { Formik } = formik;
 
     const schema = yup.object().shape({
@@ -44,8 +46,14 @@ function Complaint() {
             <div className="form__content">
                 <Formik
                     validationSchema={schema}
-                    onSubmit={(values) => {
-                        console.log(values); // Aquí imprimes los valores del formulario
+                    onSubmit={async (values) => {
+                        console.log("Enviando datos:", values);
+                        try {
+                            const response = await postComplaint(values);
+                            console.log("Respuesta del backend:", response.data);
+                        } catch (error) {
+                            console.error("Error al enviar:", error.response ? error.response.data : error);
+                        }
                     }}
                     initialValues={{
                         name: '',
@@ -153,12 +161,10 @@ function Complaint() {
                                         isInvalid={!!errors.address && touched.address}
                                         size="lg"
                                     />
-
                                     <Form.Control.Feedback type="invalid">
                                         {errors.address}
                                     </Form.Control.Feedback>
                                 </Form.Group>
-
                                 <Form.Group as={Col} md="4" controlId="validationFormik05">
                                     <Form.Label className="form__content__group__label">Correo</Form.Label>
                                     <Form.Control
@@ -187,7 +193,6 @@ function Complaint() {
                                         isInvalid={!!errors.parents && touched.parents}
                                         size="lg"
                                     />
-
                                     <Form.Control.Feedback type="invalid">
                                         {errors.parents}
                                     </Form.Control.Feedback>
@@ -262,7 +267,6 @@ function Complaint() {
                                         {errors.complaintType}
                                     </Form.Control.Feedback>
                                 </Form.Group>
-
                                 <Form.Group md="8" as={Col} controlId="validationFormik010">
                                     <Form.Label className="form__content__group__label">Detalle:</Form.Label>
                                     <Form.Control
@@ -291,5 +295,4 @@ function Complaint() {
         </>
     );
 }
-
 export default Complaint;
