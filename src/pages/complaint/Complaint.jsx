@@ -7,7 +7,6 @@ import * as formik from 'formik';
 import * as yup from 'yup';
 import OpenBook from '../../assets/images/Open_Book.png';
 import './Complaint.css';
-import {postComplaint} from "../../api/Complaint.api.js";
 
 function Complaint() {
 
@@ -47,13 +46,9 @@ function Complaint() {
                 <Formik
                     validationSchema={schema}
                     onSubmit={async (values) => {
-                        console.log("Enviando datos:", values);
-                        try {
-                            const response = await postComplaint(values);
-                            console.log("Respuesta del backend:", response.data);
-                        } catch (error) {
-                            console.error("Error al enviar:", error.response ? error.response.data : error);
-                        }
+                        console.log(values);
+                        // await postComplaint(values)
+                        // Aquí imprimes los valores del formulario
                     }}
                     initialValues={{
                         name: '',

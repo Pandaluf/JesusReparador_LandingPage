@@ -95,7 +95,6 @@ function Home() {
                     ><img className="card-custom-image" src={imgHome.imgSwearingIn1}/></div>
                 </div>
             </section>
-
         </>
     );
 }
